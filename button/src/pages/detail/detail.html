@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ peripheral.name || 'Device' }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding">
+  <ion-card>
+    <h1>{{ buttonState | buttonStateDescription }}</h1>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>{{ statusMessage }}</p>
+  </ion-toolbar>
+</ion-footer>

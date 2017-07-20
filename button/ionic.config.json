@@ -1,0 +1,5 @@
+{
+  "name": "Button",
+  "app_id": "com.example.ble.button",
+  "type": "ionic-angular"
+}

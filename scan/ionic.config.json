@@ -1,0 +1,5 @@
+{
+  "name": "Scan",
+  "app_id": "com.example.ble.scan",
+  "type": "ionic-angular"
+}

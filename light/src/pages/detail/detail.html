@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ peripheral.name || 'Device' }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding">
+
+  <ion-item>
+    <ion-label>Power</ion-label>
+    <ion-toggle [(ngModel)]="power" (ionChange)="onPowerSwitchChange($event);"></ion-toggle>
+  </ion-item>
+
+  <ion-item>
+    <ion-badge item-end color="secondary">{{brightness}}</ion-badge>
+    <ion-range max="255" debounce="30" [(ngModel)]="brightness"  (ionChange)="setBrightness($event)">
+      <ion-icon range-left small name="sunny"></ion-icon>
+      <ion-icon range-right name="sunny"></ion-icon>
+    </ion-range>
+  </ion-item>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <p>{{ statusMessage }}</p>
+  </ion-toolbar>
+</ion-footer>

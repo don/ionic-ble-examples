@@ -1,0 +1,5 @@
+{
+  "name": "Light",
+  "app_id": "com.example.ble.light",
+  "type": "ionic-angular"
+}
