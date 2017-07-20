@@ -14,4 +14,4 @@ Projects
  * [Thermometer](/thermometer) - Receive temperature notifications from Bluetooth LE thermometer
  * [NeoPixel](/neopixel) - Control NeoPixel lights with Bluetooth LE
 
- 
+The [arduino](/arduino) directory has programs and wiring diagrams for building Bluetooth LE peripherals with the Arduino 101.
