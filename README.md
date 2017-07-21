@@ -1,6 +1,6 @@
 # Ionic Bluetooth Low Energy Examples
 
-Demonstrate with [cordova-plugin-ble-central](https://github.com/don/cordova-plugin-ble-central) with [Ionic](https://ionic.io).
+Demonstrate [cordova-plugin-ble-central](https://github.com/don/cordova-plugin-ble-central) with [Ionic](https://ionic.io).
 
 Examples for [Ionic Madison Meetup July 20, 2017](https://www.meetup.com/Ionic-Madison/events/241516046/)
 
