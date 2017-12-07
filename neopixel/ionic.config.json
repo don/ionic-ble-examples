@@ -1,5 +1,8 @@
 {
   "name": "NeoPixel",
   "app_id": "com.megster.ionic3.neopixel",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

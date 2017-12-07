@@ -1,5 +1,8 @@
 {
   "name": "Connect",
   "app_id": "com.example.ble.connect",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }

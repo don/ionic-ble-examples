@@ -1,5 +1,8 @@
 {
   "name": "Thermometer",
   "app_id": "com.example.ble.thermometer",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
 }
