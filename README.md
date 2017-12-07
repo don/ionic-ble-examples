@@ -2,10 +2,7 @@
 
 Demonstrate [cordova-plugin-ble-central](https://github.com/don/cordova-plugin-ble-central) with [Ionic](https://ionic.io).
 
-Examples for [Ionic Philadelphia Meetup December 7, 2017](https://www.meetup.com/ionic-philly)
-Examples for [Ionic Madison Meetup July 20, 2017](https://www.meetup.com/Ionic-Madison/events/241516046/)
-
-[Slides](http://don.github.io/slides/2017-12-07-ionic-philadephia/#/1)
+These were examples written for an Ionic Bluetooth presentation given at the [Ionic Philadelphia Meetup](https://www.meetup.com/ionic-philly) and the [Ionic Madison Meetup](https://www.meetup.com/Ionic-Madison/events/241516046/). The [presentation slides](http://don.github.io/slides/2017-12-07-ionic-philadephia/#/1) are available online.
 
 Projects 
  * [Scan](/scan) - Scan for Bluetooth LE devices
