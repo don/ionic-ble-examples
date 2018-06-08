@@ -3,6 +3,7 @@ import { Component, NgZone } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { DetailPage } from '../detail/detail';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'page-home',
@@ -12,6 +13,7 @@ export class HomePage {
   
   devices: any[] = [];
   statusMessage: string;
+  scan$: Subscription;
 
   constructor(public navCtrl: NavController, 
               private toastCtrl: ToastController,
@@ -28,12 +30,18 @@ export class HomePage {
     this.setStatus('Scanning for Bluetooth LE Devices');
     this.devices = [];  // clear list
 
-    this.ble.scan([], 5).subscribe(
+    // scan for any Bluetooth LE devices
+    this.scan$ = this.ble.startScan([]).subscribe(
       device => this.onDeviceDiscovered(device), 
       error => this.scanError(error)
     );
 
-    setTimeout(this.setStatus.bind(this), 5000, 'Scan complete');
+    setTimeout(() => {
+      // unsubscribe automatically calls stopScan
+      this.scan$.unsubscribe();
+      this.setStatus('Scan complete');
+    }, 5000);
+
   }
 
   onDeviceDiscovered(device) {
